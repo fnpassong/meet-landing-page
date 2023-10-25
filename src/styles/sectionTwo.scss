@@ -1,0 +1,52 @@
+@import './abstract/typography.scss';
+@import './abstract/colors.scss';
+
+.sectionTwo {
+
+    font-family: $fontF;
+
+    &__subtitle {
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: $clr-primary;
+        letter-spacing: 0.25rem;
+    }
+
+    &__title {
+       /*  margin-inline: auto;
+        width: min(20.4375rem, 100%); */
+        font-size: clamp(2rem, 5vw , 2.4rem);
+        font-weight: $fw-900;
+        line-height: 1.12;
+        color: $clr-dark;
+        padding-inline: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+
+        @media (min-width: 40rem) {
+            width: min(31.25rem, 100%);
+            margin-inline: auto;
+            
+        }
+
+    }
+
+    &__paragraph {
+        
+        padding-inline: 24px;
+        padding-bottom:64px ;
+        font-size: clamp(0.9rem, 3vw, 1rem);
+        font-weight: $fw-500;
+        line-height: 1.6;
+        color: $clr-neutral;
+
+        @media (min-width: 40rem) {
+            width: min(31.25rem, 100%);
+            margin-inline: auto;
+            line-height: 1.4;
+           
+        }
+        
+    }
+
+}

@@ -1,0 +1,25 @@
+
+.collage {
+    padding-top: 4rem;
+    padding-inline: 24px;
+
+    &__pic {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5625rem;
+        padding-block: 4rem;
+
+        @media (min-width: 40rem) {
+            padding: 4.1875rem 0 3rem 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.6875rem;
+        }
+
+    }
+
+    &__pic > * {
+        border-radius: 0.5rem;
+        
+    }
+}

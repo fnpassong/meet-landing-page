@@ -1,0 +1,36 @@
+@import './abstract/colors.scss';
+@import './abstract//typography.scss';
+
+.wholeNumber {
+
+    display: grid;
+    place-items: center;
+    
+
+    &__line {
+
+
+        width: 0.0625rem;
+        height: 5.25rem;
+        background-color: $clr-neutral;
+    }
+
+    &__digit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $clr-neutral;
+        background-color: #fff;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 100%;
+        color: $clr-neutral;
+        font-family: $fontF;
+        font-weight: $fw-900;
+        line-height: 1.6;
+    }
+
+    
+
+  
+}

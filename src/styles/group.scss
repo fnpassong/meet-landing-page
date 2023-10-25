@@ -1,0 +1,67 @@
+@import './abstract/typography.scss';
+@import './abstract/colors.scss';
+
+
+.group {
+
+   /*  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+
+    padding-inline: 24px; 
+    font-family: $fontF;
+
+    &__title {
+        
+        padding-top: 48px;
+        font-size: clamp(2rem, 5vw + 1.5rem, 4rem);
+        color: $clr-dark;
+        line-height: 1.1;
+        padding-bottom: 24px;
+        font-weight: $fw-900;
+
+       @media (min-width:30rem) {
+        width: max(20.4375rem, 100%); 
+       }
+
+       @media (min-width:50rem) {
+        width: 445px;
+        padding-top: 0;
+       }
+    
+
+    }
+    
+    &__paragraph {
+        width: min(20.4375rem, 100%);
+        font-size: 1rem;
+        font-weight: 500;
+        font-weight: $fw-500;
+        line-height: 1.6;
+        color: $clr-neutral;
+
+        @media (min-width:30rem) {
+            margin-inline: auto;
+            width: min(28.5625rem, 100%);
+        }   
+    }
+
+    &__btn {
+
+        padding-top: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width:768px) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+           
+        }
+    }
+
+    
+}

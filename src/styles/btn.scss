@@ -1,0 +1,29 @@
+@import './abstract/colors.scss';
+
+
+.boton {
+
+    padding: 0.5rem 1rem;
+    border-radius: 29px;
+
+    background-color: $clr-primary;
+    color: #fff;
+    & span {
+        color: $clr-blue-light;
+    }
+
+    & + .boton {
+        margin-top: 1rem;
+
+        @media (min-width:768px) {
+            margin-top: 0;
+            margin-left: 1rem;
+        }
+    }
+
+    &:last-child {
+        background-color: $clr-secondary;
+
+    }
+
+}

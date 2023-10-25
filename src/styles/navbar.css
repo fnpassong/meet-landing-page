@@ -1,0 +1,26 @@
+.navbar {
+  --padding: 24px;
+  display: flex;
+  flex-direction: column;
+  /* grid-template-rows: auto 1fr;
+  */
+}
+.navbar__logo {
+  margin-inline: auto;
+  padding-bottom: var(--padding);
+}
+.navbar__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 1rem;
+}
+.navbar__grid .imgLeft {
+  margin-left: -20px;
+}
+.navbar__grid .imgRight {
+  margin-left: 19px;
+}
+.navbar .group {
+  grid-column: 1/3;
+}/*# sourceMappingURL=navbar.css.map */
